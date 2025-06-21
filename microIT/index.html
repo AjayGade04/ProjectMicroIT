@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>micro it</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Micro IT </h1>
+    <p>Explore coding tutorials and projects</p>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#tutorials">Tutorials</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Sign Up</a></li>
+      </ul>
+    </nav>
+    <input type="text" id="searchBar" placeholder="Search tutorials or projects..." />
+    <button onclick="searchContent()">Search</button>
+  </header>
+
+  <!-- Tutorial Section -->
+  <section id="tutorials">
+    <h2>Featured Tutorials</h2>
+    <div class="card">
+      <h3>Python Basics</h3>
+      <p>Learn Python from scratch. Difficulty: Beginner</p>
+      <button onclick="startTutorial('Python')">Start Tutorial</button>
+    </div>
+    <div class="card">
+      <h3>Java OOP Concepts</h3>
+      <p>Understand Object-Oriented Programming in Java. Difficulty: Intermediate</p>
+      <button onclick="startTutorial('Java')">Start Tutorial</button>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>To-Do List App</h3>
+      <p>Create a to-do app with HTML, CSS, JS. Difficulty: Intermediate</p>
+      <button onclick="viewProject()">View Details</button>
+      <button onclick="tryOnline()">Try Online</button>
+    </div>
+  </section>
+
+  <!-- User Dashboard (Simulated) -->
+  <section id="dashboard">
+    <h2>User Dashboard</h2>
+    <p>Logged in as: <strong>Student123</strong></p>
+    <p>Progress: Python Basics - 40% complete</p>
+    <p>Saved Projects: To-Do List App</p>
+  </section>
+
+  <!-- Additional Features -->
+  <section id="features">
+    <h2>Community & Support</h2>
+    <ul>
+      <li>FAQ & Help Section</li>
+      <li>Forums for Discussions</li>
+      <li>Mobile & Desktop Responsive</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 LearnCode Hub</p>
+    <div class="footer-links">
+      <a href="#">Facebook</a> |
+      <a href="#">Twitter</a> |
+      <a href="#">LinkedIn</a> |
+      <a href="#">Contact</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
